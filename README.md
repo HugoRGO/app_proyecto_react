@@ -1,3 +1,13 @@
+### Repositorio de App-React-Restaurante 👨🏼‍🍳
+
+***Descripción:***
+
+- En este proyecto se intenta crear una App utilizando React como framework y Firebase con uno de sus servicios como base de datos en tiempo real, todo con fines educativos.
+- Para visitar la pagina de despliege de la *App* pulsa [aquí.](https://hugorgo.github.io/Dashboard-Peliculas/ "aquí")
+
+Gracias por visitar. 😊
+
+### Info React
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
