@@ -18,16 +18,16 @@ const InfoDatos = () =>  {
                 />
             </div>
             <h1 className="text-center mt-5 fst-italic textCustomColor">
-                ¿Por qué TuCosina?
+                ¿Por qué "TuCosina"?
             </h1>
             <br/>
-            <div className="text-center mt-4 fst-italic">
+            <div className="text-center mt-4 fst-italic fs-5">
                 En esta franquicia estamos comprometidos en atender de la mejor forma posible cada una de tus comidas, teniendo en mente las necesidades de cada persona, además de cuidando y promover las buenas prácticas alimenticias.
             </div>
-            <div className="text-center fst-italic">
+            <div className="text-center fst-italic fs-5">
                 Recuerda comer saludable y balanceado todos los días, en especial durante las comidas en las que no tines un compromiso.
             </div>
-            <div className="text-center fst-italic fw-bold textCustomColor">
+            <div className="text-center fst-italic fw-bold textCustomColor fs-5">
                 -TuCosina❤️-
             </div>
             <br/>

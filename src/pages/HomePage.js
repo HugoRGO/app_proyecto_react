@@ -16,7 +16,7 @@ const HomePage = () =>  {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h2 className="text-white text-shadow">Desayunos Continentales</h2>
+                    <h2 className="text-white text-shadow">Desayuno Continental</h2>
                     <h3 className="text-shadow">Nos complase atenderte para iniciar tu día.</h3>
                     </Carousel.Caption>
                 </Carousel.Item>

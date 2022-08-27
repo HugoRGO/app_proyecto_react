@@ -17,7 +17,7 @@ const Footer = () =>  {
                     <div className="col-lg d-flex justify-content-center align-items-center">
                         <a href="#"> <img src= {IconoFB} alt="Facebook-Logo" width="40" height="35" className="d-inline-block align-text-top m-4" /></a>
                         <a href="#"> <img src= {IconoIG} alt="IG-Logo" width="40" height="35" className="d-inline-block align-text-top m-4" /></a>
-                        <a href="#"> <img src= {IconoGH} alt="Github-Logo" width="40" height="35" className="d-inline-block align-text-top m-4" /></a>
+                        <a href="https://github.com/HugoRGO/Dashboard-Peliculas"> <img src= {IconoGH} alt="Github-Logo" width="40" height="35" className="d-inline-block align-text-top m-4" /></a>
                     </div>
                     <div className="row text-center fw-semibold text-black fst-italic justify-content-center align-items-center">
                         <p>© 2022 Tucosina.</p>
