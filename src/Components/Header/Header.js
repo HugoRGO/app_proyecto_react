@@ -1,12 +1,14 @@
 import { Navbar, Container, Nav, NavDropdown, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faKitchenSet, faIdBadge, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faKitchenSet, faIdBadge, faMagnifyingGlass, faSquareCheck, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import IconoP from "../assets/IconoP.png";
+import './style.css';
+
 
 const Header = () =>  {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="bg-gradient py-2">
+        <Navbar collapseOnSelect expand="lg" bg="myColor" className="bg-gradient py-2">
             <Container>
                 <Navbar.Brand href="/">
                 <img
@@ -17,7 +19,7 @@ const Header = () =>  {
                 alt="TodoPelis logo"
                 />
                 </Navbar.Brand>
-                <Navbar.Brand href="/" className="fw-bold">Tucosina</Navbar.Brand>
+                <Navbar.Brand href="/" className="fw-bold">TuCosina</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
@@ -32,10 +34,12 @@ const Header = () =>  {
                         </span>
                     } id="collasible-nav-dropdown" className="mx-2">
                     <NavDropdown.Item to="/datos" as={Link}>
-                        Ordenes
+                        <FontAwesomeIcon icon={faSquareCheck} />&nbsp;
+                        Reservar
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item to="/info" as={Link}>
+                    <FontAwesomeIcon icon={faCircleInfo} />&nbsp;
                         Información
                     </NavDropdown.Item>
                     </NavDropdown>

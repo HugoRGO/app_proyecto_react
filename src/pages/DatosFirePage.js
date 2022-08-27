@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { getDocs, collection, onSnapshot } from "firebase/firestore";
+import { doc, collection, getDocs, onSnapshot, addDoc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import FormP from "../Components/Form/Form";
 import List from "../Components/List/List";
@@ -20,23 +20,27 @@ const DatosFirePage = () =>  {
         onSnapshot(REF_COLLECTION, (snapshot)=>{
             const lasOrdenes = [];
             snapshot.docs.forEach((orden) => {
-                lasOrdenes.push(orden.data());
+                lasOrdenes.push({
+                    ...orden.data(),
+                    id: orden?.id,
+                });
             });
             setDatos(lasOrdenes);
         })
     }
 
+    const agregarReserva = async (Reservas) => addDoc(REF_COLLECTION, Reservas);
+    const editarReserva = async (id, reservas) => setDoc(doc(db, 'Ordenes', id), reservas);
+
     useEffect(()=>{
         listenOrdenes();
     }, [] );
 
-    listenOrdenes();
-
     return (
         <>
             <Container>
-                <FormP />
-                <List datos={datos} />
+                <FormP agregarReserva={agregarReserva} />
+                <List datos={datos} editarReserva={editarReserva} />
             </Container>
         </>
         );
