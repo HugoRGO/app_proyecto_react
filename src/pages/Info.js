@@ -1,11 +1,13 @@
 import { Container } from "react-bootstrap";
+import './style.css';
+
 
 const InfoDatos = () =>  {
-    return <h1>
+    return <div className="bgCustom bg-gradient">
         <Container>
             InfoDatos
         </Container>
-        </h1>;
+        </div>;
 };
 
 export default InfoDatos;

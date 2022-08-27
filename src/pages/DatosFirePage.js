@@ -4,6 +4,8 @@ import { doc, collection, getDocs, onSnapshot, addDoc, setDoc, deleteDoc } from 
 import { db } from "../firebase";
 import FormP from "../Components/Form/Form";
 import List from "../Components/List/List";
+import './style.css';
+
 
 const DatosFirePage = () =>  {
 
@@ -40,6 +42,7 @@ const DatosFirePage = () =>  {
 
     return (
         <>
+        <div className="bgCustom bg-gradient">
             <Container>
                 <br /><br />
                 <FormP agregarReserva={agregarReserva} />
@@ -47,6 +50,7 @@ const DatosFirePage = () =>  {
                 <List datos={datos} editarReserva={editarReserva} deletReservacion={deletReservacion} />
                 <br /><br />
             </Container>
+        </div>
         </>
         );
 };

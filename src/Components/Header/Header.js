@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav, NavDropdown, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faKitchenSet, faIdBadge, faMagnifyingGlass, faSquareCheck, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faKitchenSet, faIdBadge, faMagnifyingGlass, faTableList, faCircleInfo, faCalendarMinus } from "@fortawesome/free-solid-svg-icons";
 import IconoP from "../assets/IconoP.png";
 import './style.css';
 
@@ -13,8 +13,8 @@ const Header = () =>  {
                 <Navbar.Brand href="/">
                 <img
                 src= {IconoP}
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 className="d-inline-block align-top"
                 alt="TodoPelis logo"
                 />
@@ -33,8 +33,13 @@ const Header = () =>  {
                             <i className='fad fa-newspaper'></i> Acciones
                         </span>
                     } id="collasible-nav-dropdown" className="mx-2">
+                    <NavDropdown.Item to="/menu" as={Link}>
+                        <FontAwesomeIcon icon={faTableList} />&nbsp;
+                        Menu
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
                     <NavDropdown.Item to="/datos" as={Link}>
-                        <FontAwesomeIcon icon={faSquareCheck} />&nbsp;
+                        <FontAwesomeIcon icon={faCalendarMinus} />&nbsp;
                         Reservar
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -48,11 +53,11 @@ const Header = () =>  {
                     <Form className="d-flex">
                     <Form.Control
                         type="search"
-                        placeholder="Buscar Platillo"
+                        placeholder="Buscar en TuCosina"
                         className="me-4 px-4 fst-italic"
                         aria-label="Search"
                     />
-                    <Button variant="outline-primary" className="me-4">
+                    <Button variant="outline-dark" className="me-4">
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </Button>
                     </Form>

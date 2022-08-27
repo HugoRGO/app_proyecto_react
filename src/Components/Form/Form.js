@@ -36,7 +36,7 @@ const FormP = ({agregarReserva}) => {
                     Horario de atención 09:00 a.m. - 22:00 p.m.
                 </Form.Text>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="dark" type="submit" className="mx-3 col-2 bg-gradient">
                 Submit
             </Button>
             </Form>);    
