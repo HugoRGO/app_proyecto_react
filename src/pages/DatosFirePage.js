@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { doc, collection, getDocs, onSnapshot, addDoc, setDoc } from "firebase/firestore";
+import { doc, collection, getDocs, onSnapshot, addDoc, setDoc, deleteDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import FormP from "../Components/Form/Form";
 import List from "../Components/List/List";
@@ -31,6 +31,8 @@ const DatosFirePage = () =>  {
 
     const agregarReserva = async (Reservas) => addDoc(REF_COLLECTION, Reservas);
     const editarReserva = async (id, reservas) => setDoc(doc(db, 'Ordenes', id), reservas);
+    const deletReservacion = async (id, reservas)=>  deleteDoc(doc(db, "Ordenes", id), reservas);
+
 
     useEffect(()=>{
         listenOrdenes();
@@ -39,8 +41,11 @@ const DatosFirePage = () =>  {
     return (
         <>
             <Container>
+                <br /><br />
                 <FormP agregarReserva={agregarReserva} />
-                <List datos={datos} editarReserva={editarReserva} />
+                <br /><br />
+                <List datos={datos} editarReserva={editarReserva} deletReservacion={deletReservacion} />
+                <br /><br />
             </Container>
         </>
         );
