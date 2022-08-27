@@ -44,6 +44,23 @@ const HomePage = () =>  {
                 </Carousel.Item>
             </Carousel>
         </Container>
+        <Container>
+            <br/>
+            <br/>
+            <h1 className="text-center mt-5 fst-italic textCustomColor">¿Sabías Qué?</h1>
+            <br/>
+            <div className="text-center mt-4 fst-italic">
+                Una alimentación adecuada es la que nos proporciona los requerimientos del organismo, en cuanto a energía y nutrientes, para cubrir sus necesidades y para que pueda funcionar correctamente. No existe una dieta universal adecuada, sino que debe adaptarse a cada persona atendiendo a sus características personales y su estilo de vida: una dieta equilibrada no será la misma para una niño que para un adulto o una embarazada, ni para una persona que practica habitualmente deporte o para una persona sedentaria.
+            </div>
+            <div className="text-center fst-italic">
+                Recuerda comer saludable y balanceado todos los días, en especial durante las comidas en las que no tines un compromiso.
+            </div>
+            <div className="text-center fst-italic fw-bold textCustomColor">
+                -TuCosina❤️-
+            </div>
+            <br/>
+            <br/>
+        </Container>
         </div>;
 };
 
