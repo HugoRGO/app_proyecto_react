@@ -32,19 +32,11 @@ const Header = () =>  {
                         </span>
                     } id="collasible-nav-dropdown" className="mx-2">
                     <NavDropdown.Item to="/datos" as={Link}>
-                        Action
+                        Ordenes
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.2">
-                        Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.3">
-                        Something
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
-                        Separated link
+                    <NavDropdown.Item to="/info" as={Link}>
+                        Información
                     </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
@@ -52,8 +44,8 @@ const Header = () =>  {
                     <Form className="d-flex">
                     <Form.Control
                         type="search"
-                        placeholder="Buscar Pelicula"
-                        className="me-4 px-4"
+                        placeholder="Buscar Platillo"
+                        className="me-4 px-4 fst-italic"
                         aria-label="Search"
                     />
                     <Button variant="outline-primary" className="me-4">
